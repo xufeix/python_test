@@ -7,6 +7,7 @@
 @author:XF
 """
 
+#git 练习
 
 class Parent(object):
     def __init__(self, name, sex):
