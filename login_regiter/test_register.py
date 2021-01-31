@@ -7,6 +7,10 @@
 @author:XF
 """
 
+"""
+数据库连接与操作
+"""
+
 import pymysql
 
 # 注册
