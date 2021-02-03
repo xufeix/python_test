@@ -6,6 +6,7 @@
 @time: 2021/2/3 5:35 下午
 @author:XF
 """
+import json
 
 import requests
 
@@ -22,7 +23,7 @@ data = {
     "h_m": 58706079,
     "h_pipi": "2.4.9.005",
     "h_os": 1330000,
-    "token": "v2_ApIKOJYmIepraSBRXbAi2enSDnTB67mDp981LkZloQxqFY3e7wS4I3VOZ8Ih8rSd",
+    "token": "TbK9N-X7Q-NdE-GjF9zAlHRy1DhIn7HO7mvm63X8BXf8rSPE=",
     "userstatus": 2,
     "h_dt": 1,
     "mid": 58706079,
@@ -33,6 +34,9 @@ data = {
     "target_gift_id": "283a28bd"
 }
 
-r = requests.post(url, data)
-
+r = requests.post(url, json=data)
 print(r.text)
+
+# d = dict(r.text)
+print(type(r.text))
+# print(d)
