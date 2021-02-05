@@ -22,11 +22,10 @@ passwd = input("请输入秘密：")
 register_sql = "insert into user_account(`name`,`passwd`) values('" + name + "','" + passwd + "')"
 
 # 打开数据库连接
-db = pymysql.connect(host='127.0.0.1', user= 'root', password='', database='user_account')
+db = pymysql.connect(host='127.0.0.1', user='root', password='', database='user_account')
 # 使用 cursor() 方法创建一个游标对象 cursor
 cursor = db.cursor()
 # 使用 execute()  方法执行 SQL 查询
 print(cursor.execute(register_sql))
 
 db.commit()
-
