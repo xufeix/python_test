@@ -7,6 +7,10 @@
 @author:XF
 """
 
+"""
+aseert的使用
+"""
+
 
 class StudentInfo(object):
     def __init__(self, studens):
@@ -125,7 +129,6 @@ students = {
         'class_number': 'C',
         'sex': 'girl'}
 }
-
 
 if __name__ == '__main__':
     student_info = StudentInfo(students)
